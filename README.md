@@ -1,4 +1,5 @@
-# sigmahacks
+<h1>Autis-Aid </h1>
+A Deep Learning based Alerting System for Autistic Children
 
 <H2>Inspiration</H2>
 Autistic children generally show erratic behavior and their responses are unpredictable and spontaneous, therfore such children must be taught under constant monitoring of care takers, specially trained teachers and parents. Hence the learning process for such students becomes cumbersome and sophisticated as the need of a mediator (teacher/care taker/parent) becomes a variable in the learning process. Autis-Aid aims to automate the process of real time monitoring of autistic and special aid children during their learning process.
