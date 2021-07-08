@@ -14,37 +14,31 @@ With Autis-Aid we provide a system free of mediator where the response of these 
 </ul>
 
 <H2>How we built it</H2>
-The web interface provides an option for the user to trigger the web cam in their device. Once the web cam is triggered the user can activate the functionalities of the app.
-
-From the web cam we take 1 frame in 100 frames for prediction. The prediction of the emotion is done using the saved model in h5 format.
-
-When a distressed emotion is detected the notification functionality is triggered which sends a notification to the care taker.
-
-The prediction results are also continuously stored in a database which is used for the interactive visualizations in the web interface.
+<ul>
+  <li> The web interface provides an option for the user to trigger the web cam in their device. Once the web cam is triggered the user can activate the functionalities of the app. </li>
+  <li> From the web cam we take 1 frame in 100 frames for prediction. The prediction of the emotion is done using the saved model in h5 format. </li>
+  <li> When a distressed emotion is detected the notification functionality is triggered which sends a notification to the care taker. </li>
+  <li> The prediction results are also continuously stored in a database which is used for the interactive visualizations in the web interface. </li>
+</ul>
 
 <H2>Challenges we ran into</H2>
-The dataset used for the training was imbalanced so proper balancing and pre Preprocessing of the dataset had to be done before training the model.
-A considerable amount of time was spent on finding the right training hyperparameters.
-
-In order to remove overfitting, image augmentation techniques were applied to the dataset.
-
-Getting the Web-part to work synchronously with the ML part was a bit challenging.
+<ul>
+  <li> The dataset used for the training was imbalanced so proper balancing and pre Preprocessing of the dataset had to be done before training the model.
+A considerable amount of time was spent on finding the right training hyperparameters. </li>
+  <li> In order to remove overfitting, image augmentation techniques were applied to the dataset. </li>
+  <li> Getting the Web-part to work synchronously with the ML part was a bit challenging. </li>
+</ul>
 
 <H2>Accomplishments that we're proud of</H2>
-We were able to run the flask app in real-time by taking real-time video input from the camera feed.
-
-We were able to integrate the web part with the classifier model pretty well.
+<ul>
+  <li> We were able to run the flask app in real-time by taking real-time video input from the camera feed. </li>
+  <li> We were able to integrate the web part with the classifier model pretty well. </li>
+</ul>
 
 <H2>What we learned</H2>
-Learned the need for proper time management when working with neural networks.
+<ul>
+  <li> Learned the need for proper time management when working with neural networks. </li>
+  <li> Real-time implementations are much harder when compared to textbook-level implementations. </li>
+  <li> We learn how to code efficiently when provided with a stressful time constraint. </li>
+</ul>
 
-Real-time implementations are much harder when compared to textbook-level implementations.
-
-We learn how to code efficiently when provided with a stressful time constraint.
-
-<H2>What's next for Autis-Aid</H2>
-The existing system could be refactored into an mobile application, making it possible to reach more users.
-
-The current model ony predicts some of the basic distressed emotions like: anger, fear and sadness; but with updated dataset we could capture more possible emotions.
-
-The existing system could be made more robust by adding features for peer to peer connections which could be used during online classes where multiple students could be monitored at the same time.
